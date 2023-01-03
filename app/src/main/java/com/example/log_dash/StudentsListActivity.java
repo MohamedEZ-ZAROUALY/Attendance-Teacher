@@ -9,6 +9,7 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.log_dash.adapter.EmployeeAdapter;
 import com.example.log_dash.adapter.SelectListener;
+import com.example.log_dash.adapter.TeacherListAdapter;
 import com.example.modal.Student;
 import com.example.modal.Subject;
 import com.example.retrofit.EmployeeAPI;
@@ -62,7 +63,7 @@ public class StudentsListActivity extends AppCompatActivity implements SelectLis
   }
 
   private void populateListView(List<Subject> employeeList) {
-    EmployeeAdapter employeeAdapter = new EmployeeAdapter(employeeList);
+    TeacherListAdapter employeeAdapter = new TeacherListAdapter(employeeList);
     recyclerView.setAdapter(employeeAdapter);
   }
 

@@ -20,52 +20,57 @@
         android:gravity="center"
         android:textColor="@color/white"
         android:textSize="30dp" />
+
     <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="ELGAROUATE Abdessamad"
-        android:gravity="center"
-        android:textSize="25dp"
         android:id="@+id/student_name"
-        android:layout_below="@+id/title"
-        android:layout_margin="25dp"
-        android:textColor="@color/white"
-        />
-    <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Number of absences"
+        android:layout_below="@+id/title"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="25dp"
+        android:layout_marginBottom="25dp"
         android:gravity="center"
-        android:textSize="25dp"
-        android:id="@+id/subject_title"
-        android:layout_below="@+id/student_name"
-        android:layout_margin="25dp"
+        android:text="ELGAROUATE Abdessamad"
         android:textColor="@color/white"
-        />
+        android:textSize="25dp" />
+
+    <TextView
+        android:id="@+id/subject_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/student_name"
+        android:layout_marginTop="28dp"
+        android:layout_marginBottom="25dp"
+        android:gravity="center"
+        android:text="Number of absences"
+        android:textColor="@color/white"
+        android:textSize="25dp" />
 
     <TextView
         android:id="@+id/subject_absences"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@+id/student_name"
-        android:layout_marginTop="153dp"
+        android:layout_marginTop="111dp"
         android:layout_marginBottom="25dp"
         android:gravity="center"
         android:text="2"
         android:textColor="@color/white"
         android:textSize="25dp" />
 
-    <TextView
-        android:id="@+id/state_title"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/subject_title"
-        android:layout_marginTop="167dp"
-        android:layout_marginBottom="25dp"
-        android:gravity="center"
-        android:text="Present"
-        android:textColor="@color/white"
-        android:textSize="25dp" />
+    <ListView
+        android:id="@+id/listview"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/subject_absences"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginBottom="100dp"
+        android:background="@color/white"
+        android:divider="#673AB7"
+        android:dividerHeight="6dp" />
 
 
 </RelativeLayout>

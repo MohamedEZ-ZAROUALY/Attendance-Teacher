@@ -43,17 +43,17 @@ public class LoginActivity extends AppCompatActivity {
                 RetrofitService retrofitService = new RetrofitService();
                 EmployeeAPI employeeApi = retrofitService.getRetrofit().create(EmployeeAPI.class);
 
-                Intent i = new Intent(LoginActivity.this, DashboardActivity.class);
-                startActivity(i);
-
                 employeeApi.login(username.getText().toString(),password.getText().toString())
                         .enqueue(new Callback<Teacher>() {
                             @Override
                             public void onResponse(Call<Teacher> call, Response<Teacher> response) {
                                 Toast.makeText(LoginActivity.this, "LOGIN SUCCESSFUL", Toast.LENGTH_SHORT).show();
                                 Intent i = new Intent(LoginActivity.this, DashboardActivity.class);
+                                startActivity(i);
                                 Log.d("tag", String.valueOf(response.body()));
-                                i.putExtra("TEACHER", response.body().getId());
+                                Teacher teacher = response.body();
+                                i.putExtra("TEACHER", teacher.getId());
+                                i.putExtra("TEACHER_NAME", teacher.getFirstName() +" "+teacher.getLastName());
                                 startActivity(i);
                             }
 

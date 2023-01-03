@@ -15,9 +15,9 @@
         android:layout_marginTop="100dp"
         android:layout_marginEnd="25dp"
         android:layout_marginBottom="25dp"
-        android:text="QR CODE :"
         android:fontFamily="sans-serif-medium"
         android:gravity="center"
+        android:text="QR CODE :"
         android:textColor="@color/white"
         android:textSize="30dp" />
 
@@ -28,10 +28,10 @@
         android:layout_below="@+id/qr_title"
 
         android:layout_centerInParent="true"
-        android:layout_marginStart="50dp"
-        android:layout_marginTop="100dp"
-        android:layout_marginEnd="50dp"
-        android:layout_marginBottom="70dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="75dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginBottom="50dp"
         android:background="@color/white" />
 
     <Button
@@ -39,10 +39,10 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@+id/qrcode"
+
         android:layout_centerInParent="true"
         android:layout_marginStart="100dp"
-
-        android:layout_marginTop="100dp"
+        android:layout_marginTop="356dp"
         android:layout_marginEnd="100dp"
         android:background="@color/white"
         android:text="Download" />
